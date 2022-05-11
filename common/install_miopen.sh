@@ -62,7 +62,7 @@ MIOPEN_CMAKE_COMMON_FLAGS="
 if [[ $ROCM_INT -ge 50200 ]]; then
     MIOPEN_CMAKE_DB_FLAGS="-DMIOPEN_EMBED_DB=gfx900_56;gfx906_60;gfx90878;gfx90a6e;gfx1030_36"
     MIOPEN_BRANCH="release/rocm-rel-5.2-staging"
-if [[ $ROCM_INT -ge 50100 ]]; then
+elif [[ $ROCM_INT -ge 50100 ]]; then
     MIOPEN_CMAKE_DB_FLAGS="-DMIOPEN_EMBED_DB=gfx900_56;gfx906_60;gfx90878;gfx90a6e;gfx1030_36"
     MIOPEN_BRANCH="release/rocm-rel-5.1-staging"
 elif [[ $ROCM_INT -ge 50000 ]]; then
